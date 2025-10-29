@@ -8,7 +8,7 @@ export function useMatches(pollMs = 5000) {
     refetchInterval: pollMs,
     retry: 3,
     retryDelay: (attempt) => Math.min(1000 * 2 ** (attempt - 1), 10_000),
-    refetchOnWindowFocus: true,
+    refetchOnWindowFocus: false,
     refetchOnReconnect: true,
     staleTime: 2_000,
     gcTime: 5 * 60 * 1000,

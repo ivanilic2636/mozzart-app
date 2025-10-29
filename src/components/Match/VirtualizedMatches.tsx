@@ -16,7 +16,7 @@ export default function VirtualizedMatches({
   isFavorite,
   onToggleFavorite,
   estimate = 100,
-  className = "max-h-[70vh] rounded-xl bg-white/30",
+  className = "max-h-[70vh] overflow-auto rounded-xl bg-white/30",
 }: Props) {
   const parentRef = useRef<HTMLDivElement | null>(null);
 

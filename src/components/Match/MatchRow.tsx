@@ -71,9 +71,6 @@ export default function MatchRow({
 
         <span className="text-gray-400">•</span>
         <span className="truncate max-w-[40ch]">{match.venue}</span>
-
-        <span className="text-gray-400">•</span>
-        <span className="truncate max-w-[28ch]">{match.source}</span>
       </div>
     </li>
   );

@@ -55,9 +55,9 @@ export default function MatchList() {
   const filtered: Match[] = useMemo(() => {
     if (!searchQueryName) return filteredBySelectors;
     return filteredBySelectors.filter(
-      (m) =>
-        m.homeTeam.toLowerCase().includes(searchQueryName) ||
-        m.awayTeam.toLowerCase().includes(searchQueryName)
+      (match) =>
+        match.homeTeam.toLowerCase().includes(searchQueryName) ||
+        match.awayTeam.toLowerCase().includes(searchQueryName)
     );
   }, [filteredBySelectors, searchQueryName]);
 
